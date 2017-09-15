@@ -27,3 +27,4 @@ RUN apk update \
   && echo -ne "- with FlyWay $FLYWAY_VERSION\n" >> /root/.built
 
 CMD ["flyway", "--help"]
+EXPOSE 1-65535
