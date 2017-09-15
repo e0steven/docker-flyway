@@ -2,7 +2,7 @@
 # Flyway image with MySQL Driver
 #
 
-FROM bandsintown/alpine:3.4
+FROM alpine
 
 WORKDIR /flyway
 
