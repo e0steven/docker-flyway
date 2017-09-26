@@ -12,6 +12,7 @@ RUN apk update \
   && apk add --no-cache openjdk8-jre \
   && apk add --update autossh \
   && apk add --no-cache bash \
+  && apk add openssl \
   && wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && tar -xzf flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && mv flyway-${FLYWAY_VERSION}/* . \
