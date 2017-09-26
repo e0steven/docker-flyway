@@ -9,8 +9,6 @@ WORKDIR /flyway
 ENV FLYWAY_VERSION=4.2.0 MYSQL_DRIVER_VERSION=5.1.40 DOCKERIZE_VERSION=v0.2.0
 
 RUN apk update \
-  && apk add ca-certificates \
-  && update-ca-certificates \
   && apk add --no-cache openjdk8-jre \
   && apk add --update autossh \
   && apk add --no-cache bash \
